@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K-Nuclear</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="grey darken-4">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><img src="img/logo.png" alt="K-Nuclear"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="call-to-action container center-align white-text">
+      <h1>Llevamos tu proyecto al próximo nivel</h1>
+      <p>
+        <a class="waves-effect waves-light btn-large">Cuentanos tu gran idea</a>
+      </p>
+    </div>
+
+  </header>
+
+  <section id="projects" class="scrollspy">
+    <div class="container">
+
+      <h2 class="center-align">Proyectos</h2>
+
+      <hr>
+
+      <div class="carousel carousel-slider center" data-indicators="true" id="project-carousel">
+        <div class="carousel-item red white-text" href="#one!">
+          <h2>Proyecto #1</h2>
+          <p class="white-text">Descripción del proyecto</p>
+          <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">Más información</a>
+          </div>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+          <h2>Proyecto #2</h2>
+          <p class="white-text">Descripción del proyecto</p>
+          <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">Más información</a>
+          </div>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+          <h2>Proyecto #3</h2>
+          <p class="white-text">Descripción del proyecto</p>
+          <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">Más información</a>
+          </div>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+          <h2>Proyecto #4</h2>
+          <p class="white-text">Descripción del proyecto</p>
+          <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="scrollspy blue">
+    <h3 class="center-align white-text">Nos encantaría saber de tí</h3>
+
+    <div class="row center-align">
+      <a href="#" class="white-text"><i class="fa fa-envelope"></i> knuclearcol@gmail.com</a>
+      <a href="#" class="white-text"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="white-text"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="white-text"><i class="fa fa-phone"></i> +57 301 307 4803</a>
+    </div>
+
+  </section>
+
+  <footer class="page-footer grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="black-text">Certificados por <img src="img/google-logo.png" alt="Google Logo" class="google-logo" /></h5>
+          <p class="grey-text text-lighten-4"></p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="black-text">Contáctanos</h5>
+          <ul>
+            <li><a class="grey-text text-darken-3" href="#!"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="grey-text text-darken-3" href="#!"><i class="fa fa-twitter"></i></a></li>
+            <li>+57 301 307 4803</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container grey-text text-darken-4">
+        © 2017 K-Nuclear
+      <a class="grey-text text-darken-3 right" href="#!">Diseñado por Andrés Pérez</a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $(".button-collapse").sideNav();
+      $('.carousel.carousel-slider').carousel({full_width: true});
+      $('.scrollspy').scrollSpy();
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+@import "materialize";
+
+header {
+  height: 100vh;
+  background: url(../img/header-bg.jpg) no-repeat no-repeat;
+  background-size: cover;
+  nav {
+    height: 96px;
+  }
+  .call-to-action {
+    margin-top: 10em;
+  }
+}
+
+.nav-wrapper .brand-logo img {
+  height: 96px;
+}
+
+@media (max-width: 600px) {
+  .nav-wrapper .brand-logo img {
+    height: 64px;
+  }
+}
+
+#projects {
+  hr {
+    width: 20%;
+  }
+}
+
+#contact {
+  padding: 1em;
+  a {
+    margin: 0em 1em;
+  }
+}
+
+footer {
+  ul {
+    li {
+      display: inline;
+    }
+  }
+  .google-logo {
+    position: absolute;
+    margin: 0 0.4em;
+  }
+}
