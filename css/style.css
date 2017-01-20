@@ -6584,12 +6584,21 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
+body {
+  font-family: "Open Sans", sans-serif; }
+
+/** HEADER */
 header {
   height: 100vh;
   background: url(../img/header-bg.jpg) no-repeat no-repeat;
   background-size: cover; }
   header nav {
     height: 96px; }
+    header nav .button-collapse {
+      height: 96px; }
+      header nav .button-collapse i {
+        height: 96px;
+        line-height: 96px; }
   header .call-to-action {
     margin-top: 10em; }
 
@@ -6598,18 +6607,50 @@ header {
 
 @media (max-width: 600px) {
   .nav-wrapper .brand-logo img {
-    height: 64px; } }
+    height: 96px; } }
 
+@media only screen and (min-width: 601px) {
+  nav {
+    line-height: 96px; }
+    nav .brand-logo {
+      margin-left: 1em; } }
+
+/** TEAM */
+#team {
+  padding: 1em; }
+  #team .card-action {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #team .card-action a {
+      color: #2196f3;
+      font-size: 1.2em;
+      transition: all 0.5s ease-in-out; }
+      #team .card-action a:hover {
+        color: #388e3c;
+        cursor: pointer; }
+
+/** PROJECTS */
 #projects hr {
   width: 20%; }
 
+/** CONTACT */
 #contact {
   padding: 1em; }
   #contact a {
-    margin: 0em 1em; }
+    font-size: 1.4em;
+    padding: 0em 1em; }
+    #contact a:hover {
+      cursor: pointer; }
 
+/** FOOTER */
 footer ul li {
-  display: inline; }
+  display: inline;
+  font-size: 1.4em;
+  padding: 0.4em; }
 
 footer .google-logo {
   position: absolute;
