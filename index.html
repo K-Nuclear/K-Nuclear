@@ -46,36 +46,14 @@
 
       <hr>
 
-      <div class="carousel carousel-slider center" data-indicators="true" id="project-carousel">
-        <div class="carousel-item red white-text" href="#one!">
-          <h2>Proyecto #1</h2>
-          <p class="white-text">Descripción del proyecto</p>
-          <div class="carousel-fixed-item center">
-            <a class="btn waves-effect white grey-text darken-text-2">Más información</a>
-          </div>
-        </div>
-        <div class="carousel-item amber white-text" href="#two!">
-          <h2>Proyecto #2</h2>
-          <p class="white-text">Descripción del proyecto</p>
-          <div class="carousel-fixed-item center">
-            <a class="btn waves-effect white grey-text darken-text-2">Más información</a>
-          </div>
-        </div>
-        <div class="carousel-item green white-text" href="#three!">
-          <h2>Proyecto #3</h2>
-          <p class="white-text">Descripción del proyecto</p>
-          <div class="carousel-fixed-item center">
-            <a class="btn waves-effect white grey-text darken-text-2">Más información</a>
-          </div>
-        </div>
-        <div class="carousel-item blue white-text" href="#four!">
-          <h2>Proyecto #4</h2>
-          <p class="white-text">Descripción del proyecto</p>
-          <div class="carousel-fixed-item center">
-            <a class="btn waves-effect white grey-text darken-text-2">Más información</a>
-          </div>
-        </div>
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="img/t1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="img/t2.png"></a>
+        <a class="carousel-item" href="#three!"><img src="img/t3.png"></a>
+        <a class="carousel-item" href="#four!"><img src="img/t4.png"></a>
+        <a class="carousel-item" href="#five!"><img src="img/t5.png"></a>
       </div>
+
     </div>
   </section>
 
@@ -86,12 +64,11 @@
       <div class="col s12 m4">
         <div class="card">
           <div class="card-image">
-            <img src="https://www.tansa.com/wp-content/uploads/2013/05/placeholder.png">
+            <img src="img/julian-david.jpg">
           </div>
           <div class="card-content">
-            <h5 class="center-align">David Londoño</h5>
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
+            <h5 class="center-align">Julian David Arroyave Pérez</h5>
+            <p class="center-align">Diseño gráfico y comunicación</p>
           </div>
           <div class="card-action">
             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -102,11 +79,11 @@
       <div class="col s12 m4">
         <div class="card">
           <div class="card-image">
-            <img src="https://www.tansa.com/wp-content/uploads/2013/05/placeholder.png">
+            <img src="img/david-santiago.jpg">
           </div>
           <div class="card-content">
-            <h5 class="center-align">David Londoño</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dolores similique, culpa a harum iste. Repellat debitis sapiente, nobis nisi. Reprehenderit numquam illo aspernatur, ea est porro eos culpa molestias.</p>
+            <h5 class="center-align">David Santiago Londoño Giraldo</h5>
+            <p class="center-align">Desarrollo de software y diseño gráfico</p>
           </div>
           <div class="card-action">
             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -117,12 +94,11 @@
       <div class="col s12 m4">
         <div class="card">
           <div class="card-image">
-            <img src="https://www.tansa.com/wp-content/uploads/2013/05/placeholder.png">
+            <img src="img/juan-esteban.jpg">
           </div>
           <div class="card-content">
-            <h5 class="center-align">David Londoño</h5>
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
+            <h5 class="center-align">Juan Esteban Cardona Duque</h5>
+            <p class="center-align">Comunicador y manejo de redes sociales</p>
           </div>
           <div class="card-action">
             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -138,8 +114,8 @@
 
     <div class="row center-align">
       <div class="container">
-        <a href="#" class="white-text"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="white-text"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/turicarmen" class="white-text" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/TuriCarmenApp" class="white-text" target="_blank"><i class="fa fa-twitter"></i></a>
       </div>
 
       <p class="white-text"><i class="fa fa-envelope"></i> knuclearcol@gmail.com</p>
@@ -159,8 +135,8 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="black-text">Contáctanos</h5>
           <ul>
-            <li><a class="grey-text text-darken-3" href="https://www.facebook.com/K-Nuclear-242671676131767/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="grey-text text-darken-3" href="https://twitter.com/KNuclearCol" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="grey-text text-darken-3" href="https://www.facebook.com/turicarmen" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="grey-text text-darken-3" href="https://twitter.com/TuriCarmenApp" target="_blank"><i class="fa fa-twitter"></i></a></li>
             <li>+57 301 307 4803</li>
           </ul>
         </div>
@@ -181,7 +157,7 @@
   <script>
     $(document).ready(function() {
       $(".button-collapse").sideNav();
-      $('.carousel.carousel-slider').carousel({full_width: true});
+      $('.carousel').carousel();
       $('.scrollspy').scrollSpy();
     })
   </script>
