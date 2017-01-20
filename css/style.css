@@ -6611,13 +6611,17 @@ header {
 
 @media only screen and (min-width: 601px) {
   nav {
-    line-height: 96px; }
-    nav .brand-logo {
-      margin-left: 1em; } }
+    line-height: 96px; } }
+
+@media only screen and (min-width: 769px) {
+  nav .brand-logo {
+    margin-left: 1em; } }
 
 /** TEAM */
 #team {
   padding: 1em; }
+  #team h3 {
+    text-shadow: 1px 2px 1px #000; }
   #team .card-action {
     display: -webkit-flex;
     display: -ms-flexbox;
