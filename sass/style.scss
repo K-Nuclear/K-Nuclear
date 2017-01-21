@@ -79,6 +79,13 @@ header {
   hr {
     width: 20%;
   }
+  .center-stuff {
+    display: flex;
+    justify-content: center;
+    #gpb {
+      height: 80px;
+    }
+  }
 }
 
 /** CONTACT */
